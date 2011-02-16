@@ -20,7 +20,7 @@ Library
   Extra-libraries:  gd, png, z, jpeg, m, fontconfig, freetype, expat
   Includes:         gd.h
   Include-dirs:     cbits
-  Install-includes: check-email.h
+  Install-includes: check-mx.h
   C-sources:        cbits/check-mx.c
   Extra-libraries:  resolv
   Hs-source-dirs:   src

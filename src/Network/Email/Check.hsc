@@ -2,7 +2,6 @@
 
 module Network.Email.Check where
 
-import Foreign
 import Foreign.C.Types
 import Text.Email.Validate
 import Foreign.C
