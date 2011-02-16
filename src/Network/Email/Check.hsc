@@ -12,6 +12,8 @@ import Foreign.C
 foreign import ccall "check-mx.h check_mx" checkMx
     :: CString -> IO CInt
 
+-- | Check to see whether an email is (1) RFC-valid and (2) has an
+-- existant MX record.
 check :: String -> IO (Either String EmailAddress)
 check email = do
   case validate email of
