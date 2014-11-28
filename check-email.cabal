@@ -1,7 +1,7 @@
 Name:                check-email
 Category:            Network
 License-File:        LICENSE
-Version:             0.1
+Version:             1.0
 Cabal-version:       >= 1.2
 Build-type:          Simple
 Copyright:           2010 Chris Done
@@ -13,12 +13,12 @@ Description:         Confirm whether an email is valid and probably existant.
 Extra-source-files:  cbits/check-mx.h
 
 Library
-  Build-depends:    base >= 4 && < 5, email-validate >= 0.2 && <0.3
+  Build-depends:    base >= 4 && < 5
+                  , bytestring
+                  , email-validate >= 0.2
   Extensions:       ForeignFunctionInterface
   Exposed-Modules:  Network.Email.Check
   Ghc-options:      -Wall
-  Extra-libraries:  gd, png, z, jpeg, m, fontconfig, freetype, expat
-  Includes:         gd.h
   Include-dirs:     cbits
   Install-includes: check-mx.h
   C-sources:        cbits/check-mx.c
