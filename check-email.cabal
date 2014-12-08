@@ -1,7 +1,7 @@
 Name:                check-email
 Category:            Network
 License-File:        LICENSE
-Version:             1.0
+Version:             1.0.1
 Cabal-version:       >= 1.2
 Build-type:          Simple
 Copyright:           2010 Chris Done
