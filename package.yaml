@@ -1,0 +1,27 @@
+name: check-email
+version: 1.0.2
+synopsis: Confirm whether an email is valid and probably existant.
+description: See README at <https://github.com/qoelet/check-email#readme>
+author: Chris Done
+maintainer: Kenny Shen <kenny@machinesung.com>
+license: BSD3
+github: qoelet/check-email
+category: Network
+copyright: 2010 Chris Done
+
+ghc-options: -Wall
+extra-source-files: cbits/check-mx.h
+
+dependencies:
+  - base >= 4 && < 5
+  - bytestring
+  - email-validate >= 0.2
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Network.Email.Check
+  extra-libraries: resolv
+  c-sources: cbits/check-mx.c
+  include-dirs: cbits
+  default-extensions: ForeignFunctionInterface
