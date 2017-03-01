@@ -2,15 +2,17 @@ Name:                check-email
 Category:            Network
 License-File:        LICENSE
 Version:             1.0.1
-Cabal-version:       >= 1.2
+Cabal-version:       >= 1.6
 Build-type:          Simple
 Copyright:           2010 Chris Done
-Maintainer:          Chris Done <chrisdone@gmail.com>
+Maintainer:          Kenny Shen <kenny@machinesung.com>
 Author:              Chris Done
 License:             BSD3
 Synopsis:            Confirm whether an email is valid and probably existant.
 Description:         Confirm whether an email is valid and probably existant.
 Extra-source-files:  cbits/check-mx.h
+Homepage:            http://github.com/qoelet/check-email
+Bug-Reports:         http://github.com/qoelet/check-email/issues
 
 Library
   Build-depends:    base >= 4 && < 5
@@ -24,3 +26,7 @@ Library
   C-sources:        cbits/check-mx.c
   Extra-libraries:  resolv
   Hs-source-dirs:   src
+
+source-repository head
+  type: git
+  location: git://github.com/qoelet/check-email.git
