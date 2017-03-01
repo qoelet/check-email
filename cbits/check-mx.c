@@ -7,5 +7,5 @@
 int check_mx(char *domain)
 {
   u_char nsbuf[4096];
-  return res_query(domain, ns_c_any, ns_t_mx, nsbuf, sizeof (nsbuf)) > 0;
+  return res_query(domain, ns_c_in, ns_t_mx, nsbuf, sizeof (nsbuf)) > 0;
 }
